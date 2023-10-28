@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-1{
+    padding: 14px 30px;
+    color: #0af7e7;
+    background-color: #01030e;
+    font-size: 15px;
+    font-weight: 700;
+    border: #0af7e7;
+    border-style: solid;
+    box-shadow: 0 5px 15px;
+    cursor: pointer;
+}
+.button-1:hover{
+    height: 60px;
+}
+
+
+
+body{
+    background-color: #ddfff7;
+    width: 100%;
+    height: 80%;
+}
+/* header */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#ddfff7;
+    height: 50px;
+    font-size: 20px;
+    list-style: none;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+}
+
+#navbar li a {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#navbar li a:hover {
+    background-color:cyan;
+    border-radius: 10%;
+    color:black;
+    font-size: larger;
+}
+
+#mobile {
+    display:none;
+    justify-content: space-between;
+}
+#mobile i {
+    font-size: 24px;
+    padding-left: 20px;
+    color: #0af7e7;
+}
+#close{
+    display: none;
+}
+
+/* Home page */
+
+#welcome{
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/tent1-1.jpg);
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#welcome p{
+    box-shadow: 0px 5px 15px;
+    color: rgb(10, 239, 239) ;
+    font-size: 60px;
+}
+
+#welcome .h2-1{
+    padding-top: 30px;
+}
+#welcome h2{
+    color: aqua;
+}
+#welcome button{
+    margin-top: 7px;
+}
+
+/* product section */
+
+#product1{
+    text-align: center;
+}
+#product1 h2{
+    padding-top: 20px;
+    font-size: 75px;
+}
+
+#product1 .pro-container{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#product1 .pro{
+    width: 30%;
+    min-width: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 20px 5px;
+}
+
+.pro-container ,.pro img {
+    width:100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pro{
+    background-color:rgba(255, 255, 255, 0.534);
+    
+}
+
+#product1 .pro-container .des h5{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+#product1 .pro-container span{
+    font-size: 14px;
+}
+
+
+/* camping equipment page */
+
+#welcome-c{
+    background-image: url(images/tent1-1.jpg);
+    background-size: cover;
+    box-shadow: 0px 15px 15px;
+    color: aqua;
+    font-size: 60px;
+    padding: 10px;
+    text-align: center;
+} 
+
+#shop .shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:90px; 
+}
+
+#shop .img-h{
+    width:30%;
+    min-width:25px;
+    padding: 10px 12px;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2) ;
+    margin:10px;
+    transition: 0.2s;
+    position: relative;
+}
+
+#shop .img-h img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.img-h img{
+    width:100%;
+}
+
+
+.star{
+    color: gold;
+}
+
+#shop .img-h .des{
+    text-align: start;
+    padding-right: 10px 0;
+}
+#shop .img-h .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+
+#shop .img-h .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    color: #088178;
+}
+
+
+
+/* reviews page */
+.rv{
+    text-align: center;
+    margin-bottom:40px ;
+}
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.comment img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.com{
+    display: flex;
+}
+
+.dp{
+    padding: 10px;
+    width: 300px;
+}
+
+#form-details{
+    width: 100%;
+    justify-content: center;
+}
+
+#form-details form{
+    margin-top: 30PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-details form input , #form-details form textarea{
+    width: 40%;
+    padding: 12px 15px;
+    /* outline: none; */
+    margin-bottom: 20px;
+    border-radius: 1px solid #e1e1e1;
+}
+
+.btn{
+    margin-bottom: 10px;
+}
+
+#form-details form input{
+    margin-top: 10px;
+}
+
+
+/* furniture page */
+
+.furniture{
+    display: flex;
+    margin-top: 40px;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.furniture {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.furniture img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    border-color: 1px solid #bc2a8d;
+}
+
+
+/* basket page */
+#cart{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+#cart img{
+    width: 60px;
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #e1e1e1;
+}
+
+thead td{
+    padding: 20px;
+    background-color: #088178;
+}
+tbody td input{
+    width: 40px;
+    padding: 5px;
+}
+thead td:nth-child(4){
+     width: 40px; 
+}
+
+/* offers and packages  */
+ 
+#offer{
+    display: flex;
+    flex-direction: column;
+}
+
+.offers-container {
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #e1e1e1;
+    
+}
+
+
+.offer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+
+.offer img {
+    max-width: 50%; 
+    height: auto; 
+}
+
+.offer h2 {
+    font-size: 1.5rem;
+    margin-top: 10px; 
+    color: #333; 
+}
+
+.offer p {
+    color: #666;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: black;
+}
+
+footer h4{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #0af7e7;
+}
+footer p {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+footer p:hover{
+    color: #0af7e7;
+    font-size: 14px;
+}
+
+footer a {
+    font-size: 36px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px;
+    color: aqua ;
+}
+
+.follow h4{
+    margin-top:10px;
+    font-size:30px;
+}
+
+.follow i{
+    padding: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color:#0af7e7
+}
+.follow i:hover{
+    font-size: 28px;
+    color: #0af7e7;
+}
+.follow i:nth-child(1):hover{
+    color:blue;
+}
+
+.follow i:nth-child(2):hover{
+    color:#1da1f2;
+}
+
+.follow i:nth-child(3):hover{
+    color:#bc2a8d;
+}
+
+.follow i:nth-child(4):hover{
+    color:red;
+}
+
+
+/* media query */
+
+
+@media (max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #01030e;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px; 
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li a {
+        color: #0af7e7;
+        cursor: pointer;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display:flex;
+        background-color:black;
+        text-align: center;
+        color: #0af7e7;
+        font-size:40px;
+    }
+    #mobile i {
+        color: rgb(11, 244, 244);
+        font-size: 40px;
+        padding-left: 40px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #0af7e7;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #welcome {
+        width: 100%;
+        height: 40vh;
+        background-image: url(images/tent1-1.jpg);
+        background-size: cover;
+        padding: 0 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #welcome p {
+        box-shadow: 0px 5px 15px;
+        color: rgb(10, 239, 239);
+        font-size: 45px;
+    }
+
+    #welcome .h2-1 {
+        padding-top: 20px;
+    }
+
+    #product1 .pro-container {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    /* camping equipment */
+
+    #welcome-c {
+        font-size: 55px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #welcome-c {
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #form-details form input, #form-details form textarea {
+        width: 60%;
+    }
+
+    .comment {
+        padding-left: 10px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    /* furniture */
+
+    .furniture img {
+        width: 80%;
+        padding-left: 20px;
+        height: auto;
+    }
+
+    #offer{
+        flex-direction: column;
+    }
+
+    .offer h2 {
+        font-size:20px;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .offer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .offer p {
+        color: #313030;
+        font-size: smaller;
+    }
+}
+
+
+
+@media (max-width:477px){
+    #mobile {
+        font-size: 25px;
+    }
+
+    #mobile i {
+        font-size: 24px;
+        padding-right: 20px;
+        color: #0af7e7;
+    }
+    #welcome {
+        width: 100%;
+        height: 40vh;
+    }
+    #welcome p {
+        font-size: 20px;
+    }
+    #welcome .h2-1 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    #welcome h2 {
+        font-size: 16px;
+    }
+
+    .button-1 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    #product1 h2 {
+        padding-top: 10px;
+        font-size: 45px;
+    }
+    /* camping page */
+    #welcome-c {
+        font-size: 25px;
+    }
+    #shop{
+        justify-content: center;
+        text-align: center;
+        margin-left:60px;
+    }
+    #shop .shop-container {
+        width:800px;
+        flex-direction: column;
+        padding-top: 40px;
+        
+    }
+    /* furniture page  */
+    #welcome-c {
+        font-size: 20px;
+    }
+
+    .furniture {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 10px;
+    }
+    #form-details form input, #form-details form textarea {
+        width: 75%;
+    }
+    .dp p {
+        font-size: 14px;
+    }
+
+    /* cart page */
+    /* table { */
+        /* width: 50%; */
+    /* } */
+    #cart {
+        width:400px;
+        margin:0;
+    }
+    thead td {
+        padding: 10px;
+    }
+
+    .offers-container {
+        max-width: 500px;
+        text-align: center;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
